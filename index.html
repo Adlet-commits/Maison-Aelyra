@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maison Aelyra — фарфоровая посуда премиум-класса</title>
+  <meta name="description" content="Maison Aelyra — шоурум премиальной фарфоровой посуды: сервизы из костяного фарфора с ручной росписью и золотой каймой. Коллекции Tulipe Impériale и Coquelicot.">
+  <meta name="theme-color" content="#F7F3EC">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Maison Aelyra">
+  <meta property="og:title" content="Maison Aelyra — фарфоровая посуда премиум-класса">
+  <meta property="og:description" content="Костяной фарфор с ручной росписью и золотой каймой. Шоурум посуды @showroom_aelyra.">
+  <!-- После публикации замените на полный адрес: https://ваш-домен/assets/img/og-image.jpg -->
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-coquelicot.webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a class="logo" href="#top" aria-label="Maison Aelyra — на главную">
+        <span class="logo__word">Maison Aelyra</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Основное меню"></nav>
+      <div class="header__actions">
+        <a class="icon-link" data-instagram aria-label="Instagram" target="_blank" rel="noopener"></a>
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden></div>
+
+  <!-- Все секции страницы собираются из файла content.js -->
+  <main id="main"></main>
+
+  <footer class="footer" id="footer"></footer>
+
+  <dialog class="modal" id="modal" aria-label="Подробнее">
+    <button class="modal__close" data-close aria-label="Закрыть">&times;</button>
+    <div class="modal__body" id="modal-body"></div>
+  </dialog>
+
+  <noscript>
+    <div class="noscript">
+      <p>Для просмотра сайта включите JavaScript.<br>
+      Коллекции Maison Aelyra — в Instagram: <a href="https://instagram.com/showroom_aelyra">@showroom_aelyra</a></p>
+    </div>
+  </noscript>
+
+  <script src="content.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
