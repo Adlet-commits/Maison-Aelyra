@@ -328,6 +328,15 @@
           </div>
           ${s.image ? `<div class="contact__media" data-reveal>${img(s.image, s.alt)}</div>` : ''}
         </div>
+        ${
+          s.map && C.address
+            ? `<div class="container"><div class="contact__map" data-reveal>
+                <iframe src="https://maps.google.com/maps?q=${encodeURIComponent(
+                  [C.city, C.address].filter(Boolean).join(', ')
+                )}&z=16&output=embed" loading="lazy" title="Карта: ${attr(C.address)}" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div></div>`
+            : ''
+        }
       </section>`;
     },
 

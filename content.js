@@ -17,25 +17,25 @@ window.SITE = {
     name: 'Maison Aelyra',
     tagline: 'Fine Porcelain',
     description:
-      'Maison Aelyra — шоурум премиальной фарфоровой посуды: сервизы из костяного фарфора с ручной росписью и золотой каймой.',
+      'Maison Aelyra — шоурум фарфоровой посуды в Алматы. Коллекции Nauryz, Qyzgaldaq и Jusan: сервизы и чайные наборы с золотой каймой.',
   },
 
   /* Контакты. Пустые поля на сайте не показываются.
      whatsapp — только цифры с кодом страны, например: '77001234567'   */
   contacts: {
     instagram: 'showroom_aelyra',
-    whatsapp: '',
-    phone: '',
+    whatsapp: '77020071120',
+    phone: '+7 702 007 11 20',
     email: '',
-    city: '',
-    address: '',
-    hours: '',
-    mapUrl: '', // ссылка на 2ГИС / Google Maps / Яндекс Карты
+    city: 'Алматы',
+    address: 'ул. Мынбаева, 43',
+    hours: 'с 10:00 до 18:00',
+    mapUrl: 'https://2gis.kz/almaty/search/Мынбаева 43', // ссылка на 2ГИС / Google Maps / Яндекс Карты
   },
 
   /* Текст, который подставляется в сообщение при нажатии «Заказать».
      {item} заменится на название товара. */
-  orderMessage: 'Здравствуйте! Меня интересует «{item}». Подскажите, пожалуйста, стоимость и наличие.',
+  orderMessage: 'Здравствуйте! Меня интересует: {item}. Подскажите, пожалуйста, стоимость и наличие.',
 
   nav: [
     { label: 'Коллекции', href: '#collections' },
@@ -50,17 +50,18 @@ window.SITE = {
     {
       type: 'hero',
       id: 'top',
-      eyebrow: 'Fine Porcelain · Шоурум посуды',
+      eyebrow: 'Fine Porcelain · Шоурум в Алматы',
       title: 'Искусство<br><em>красивого стола</em>',
-      text: 'Костяной фарфор с ручной росписью и золотой каймой — для семейных ужинов, праздников и подарков, которые передают из поколения в поколение.',
+      text: 'Фарфоровые сервизы с золотой каймой и тонкой росписью — для семейных ужинов, праздников и подарков, которые передают из поколения в поколение.',
       buttons: [
         { label: 'Смотреть коллекции', href: '#collections', style: 'primary' },
-        { label: 'Написать в Instagram', href: 'instagram', style: 'ghost' },
+        { label: 'Написать в WhatsApp', href: 'whatsapp', style: 'ghost' },
       ],
       // focus — какая часть фото видна на компьютере, focusMobile — на телефоне
       slides: [
-        { image: 'assets/img/hero-coquelicot.webp', alt: 'Сервиз Coquelicot с розовыми маками на мраморном столе', focus: '0% 50%', focusMobile: '64% 50%' },
-        { image: 'assets/img/hero-tulipe.webp', alt: 'Тарелки Tulipe Impériale с тюльпанами на мраморе в мягком свете', focus: '0% 50%', focusMobile: '62% 50%' },
+        { image: 'assets/img/hero-qyzgaldaq.webp', alt: 'Розовый сервиз Qyzgaldaq на мраморном столе', focus: '0% 50%', focusMobile: '64% 50%' },
+        { image: 'assets/img/hero-nauryz.webp', alt: 'Тарелки Nauryz с тюльпанами на мраморе в мягком свете', focus: '0% 50%', focusMobile: '62% 50%' },
+        { image: 'assets/img/hero-jusan.webp', alt: 'Чайный сервиз Jusan с веточками жусана', focus: '100% 50%', focusMobile: '100% 50%' },
       ],
     },
 
@@ -71,13 +72,13 @@ window.SITE = {
       eyebrow: 'О доме Aelyra',
       title: 'Посуда, вокруг которой <em>собирается семья</em>',
       text: [
-        'Maison Aelyra — шоурум изысканной фарфоровой посуды. Мы отбираем сервизы, в которых классическая европейская форма встречается с тонким восточным орнаментом: тюльпаны, маки, золотые узоры.',
-        'Каждый предмет создан для того, чтобы превращать обычный ужин в событие, а праздничный стол — в воспоминание.',
+        'Maison Aelyra — шоурум изысканной фарфоровой посуды в Алматы. Мы отбираем сервизы, в которых классическая форма встречается с мотивами родной степи: тюльпаны, нежные полевые цветы, веточки жусана и золотой национальный орнамент.',
+        'Каждый предмет создан для того, чтобы превращать обычный ужин в событие, а праздничный дастархан — в воспоминание.',
       ],
       stats: [
-        { value: '24K', label: 'золото на кромке' },
-        { value: '1280°', label: 'обжиг фарфора' },
-        { value: '6 / 12', label: 'персон в сервизе' },
+        { value: '03', label: 'коллекции фарфора' },
+        { value: '24K', label: 'золото в декоре Nauryz' },
+        { value: '10–18', label: 'часы работы шоурума' },
       ],
     },
 
@@ -86,35 +87,43 @@ window.SITE = {
       type: 'collections',
       id: 'collections',
       eyebrow: 'Коллекции',
-      title: 'Две истории <em>в фарфоре</em>',
+      title: 'Три истории <em>в фарфоре</em>',
       items: [
         {
-          name: 'Tulipe Impériale',
+          name: 'Nauryz',
           subtitle: 'Ручная роспись · Кромка в золоте 24К',
           text: 'Бирюзовая глазурь, гирлянды розовых тюльпанов и пиалы с золотым национальным орнаментом. Коллекция для торжественного дастархана и больших семейных праздников.',
-          image: 'assets/img/tulipe-linen.webp',
-          alt: 'Сервиз Tulipe Impériale: тарелки с тюльпанами и пиала на льняной скатерти',
-          filter: 'Tulipe Impériale',
+          image: 'assets/img/nauryz-linen.webp',
+          alt: 'Сервиз Nauryz: тарелки с тюльпанами и пиала на льняной скатерти',
+          filter: 'Nauryz',
         },
         {
-          name: 'Coquelicot',
+          name: 'Qyzgaldaq',
           subtitle: 'Волнистый край · Золотая кайма',
-          text: 'Нежно-розовый фарфор с акварельными маками и фигурным краем, обведённым золотом. Романтичная коллекция для чаепитий, весенних завтраков и подарка любимым.',
-          image: 'assets/img/coquelicot-linen.webp',
-          alt: 'Розовый сервиз Coquelicot с маками, вид сверху на льняной скатерти',
-          filter: 'Coquelicot',
+          text: 'Нежно-розовый фарфор с акварельными цветами и фигурным краем, обведённым золотом. Романтичная коллекция для чаепитий, весенних завтраков и подарка любимым.',
+          image: 'assets/img/qyzgaldaq-linen.webp',
+          alt: 'Розовый сервиз Qyzgaldaq, вид сверху на льняной скатерти',
+          filter: 'Qyzgaldaq',
+        },
+        {
+          name: 'Jusan',
+          subtitle: 'Чайный сервиз · Золотые ручки',
+          text: 'Мятно-белый фарфор с веточками жусана — символа степи и родного дома. Чайник, сахарница, молочник и чайные пары с золотыми акцентами для неспешного семейного чаепития.',
+          image: 'assets/img/jusan-linen.webp',
+          alt: 'Чайный сервиз Jusan: чайник, сахарница, молочник и чашки',
+          filter: 'Jusan',
         },
       ],
     },
 
-    /* ───────────── 4. Детали / качество ───────────── */
+    /* ───────────── 4. Детали / качество (коллекция Nauryz) ───────────── */
     {
       type: 'features',
       id: 'craft',
-      eyebrow: 'Мастерство',
+      eyebrow: 'Мастерство · Nauryz',
       title: 'Каждый лепесток <em>написан вручную</em>',
-      image: 'assets/img/tulipe-detail.webp',
-      alt: 'Пиала Tulipe Impériale крупным планом: золотой орнамент и тюльпаны',
+      image: 'assets/img/nauryz-detail.webp',
+      alt: 'Пиала Nauryz крупным планом: золотой орнамент и тюльпаны',
       items: [
         { title: 'Костяной фарфор', text: 'Тонкий, лёгкий и прочный. Мягко просвечивает на свету и сохраняет благородную белизну.' },
         { title: 'Золото 24К', text: 'Кромка и орнамент покрыты настоящим золотом — тёплый блеск, который невозможно спутать.' },
@@ -127,12 +136,12 @@ window.SITE = {
     {
       type: 'banner',
       id: 'set',
-      eyebrow: 'Tulipe Impériale',
+      eyebrow: 'Nauryz',
       title: 'Сервиз на 6 персон',
       text: 'Тарелки · пиалы · десертные приборы',
-      image: 'assets/img/tulipe-dark.webp',
-      alt: 'Тарелки Tulipe Impériale на тёмном столе',
-      button: { label: 'Узнать стоимость', href: 'order:Сервиз «Tulipe Impériale» на 6 персон' },
+      image: 'assets/img/nauryz-dark.webp',
+      alt: 'Тарелки Nauryz на тёмном столе',
+      button: { label: 'Узнать стоимость', href: 'order:Сервиз «Nauryz» на 6 персон' },
     },
 
     /* ───────────── 6. Каталог ───────────── */
@@ -145,53 +154,77 @@ window.SITE = {
       filters: true, // кнопки-фильтры по коллекциям
       items: [
         {
-          name: 'Сервиз «Tulipe Impériale» на 6 персон',
-          collection: 'Tulipe Impériale',
-          image: 'assets/img/p-tulipe-service.webp',
+          name: 'Сервиз «Nauryz» на 6 персон',
+          collection: 'Nauryz',
+          image: 'assets/img/p-nauryz-service.webp',
           text: 'Тарелки трёх размеров, пиалы с золотым орнаментом и десертные приборы.',
           details: ['Костяной фарфор', 'Ручная роспись', 'Кромка в золоте 24К'],
           price: 'Цена по запросу',
           badge: 'Хит',
         },
         {
-          name: 'Набор тарелок «Tulipe», 3 предмета',
-          collection: 'Tulipe Impériale',
-          image: 'assets/img/p-tulipe-plates.webp',
+          name: 'Набор тарелок «Nauryz», 3 предмета',
+          collection: 'Nauryz',
+          image: 'assets/img/p-nauryz-plates.webp',
           text: 'Подстановочная, обеденная и закусочная тарелки с гирляндой тюльпанов.',
           details: ['Подстановочная тарелка', 'Обеденная тарелка', 'Закусочная тарелка'],
           price: 'Цена по запросу',
         },
         {
-          name: 'Пиала с золотым орнаментом',
-          collection: 'Tulipe Impériale',
-          image: 'assets/img/p-tulipe-piala.webp',
+          name: 'Пиала «Nauryz» с золотым орнаментом',
+          collection: 'Nauryz',
+          image: 'assets/img/p-nauryz-piala.webp',
           text: 'Бирюзовая глазурь, национальный узор по краю и на ножке.',
           details: ['Золотой орнамент', 'Подходит для чая и десертов'],
           price: 'Цена по запросу',
         },
         {
-          name: 'Обеденный набор «Coquelicot»',
-          collection: 'Coquelicot',
-          image: 'assets/img/p-coquelicot-dinner.webp',
+          name: 'Обеденный набор «Qyzgaldaq»',
+          collection: 'Qyzgaldaq',
+          image: 'assets/img/p-qyzgaldaq-dinner.webp',
           text: 'Тарелки трёх размеров с волнистым краем и золотой каймой.',
-          details: ['Фигурный край', 'Золотая кайма', 'Рисунок с маками'],
+          details: ['Фигурный край', 'Золотая кайма', 'Цветочный рисунок'],
+          price: 'Цена по запросу',
+        },
+        {
+          name: 'Чайная пара «Qyzgaldaq»',
+          collection: 'Qyzgaldaq',
+          image: 'assets/img/p-qyzgaldaq-tea.webp',
+          text: 'Чашка с золотой ручкой и тарелка с акварельными цветами.',
+          details: ['Золотая ручка', 'Белая внутренняя поверхность'],
+          price: 'Цена по запросу',
+        },
+        {
+          name: 'Десертная тарелка с приборами «Qyzgaldaq»',
+          collection: 'Qyzgaldaq',
+          image: 'assets/img/p-qyzgaldaq-dessert.webp',
+          text: 'Десертная тарелка, ложка и вилка с золотистыми ручками.',
+          details: ['Десертная тарелка', 'Ложка и вилка'],
+          price: 'Цена по запросу',
+        },
+        {
+          name: 'Чайный сервиз «Jusan»',
+          collection: 'Jusan',
+          image: 'assets/img/p-jusan-set.webp',
+          text: 'Чайник на блюде, сахарница с крышкой, молочник и чайные пары.',
+          details: ['Чайник с блюдом', 'Сахарница и молочник', 'Чашки с блюдцами'],
           price: 'Цена по запросу',
           badge: 'Новинка',
         },
         {
-          name: 'Чайная пара «Coquelicot»',
-          collection: 'Coquelicot',
-          image: 'assets/img/p-coquelicot-tea.webp',
-          text: 'Чашка с позолоченной ручкой и тарелка с акварельными маками.',
-          details: ['Позолоченная ручка', 'Белая внутренняя поверхность'],
+          name: 'Чайник «Jusan» с блюдом',
+          collection: 'Jusan',
+          image: 'assets/img/p-jusan-teapot.webp',
+          text: 'Фигурный чайник с золотой крышкой и блюдо с гирляндой жусана.',
+          details: ['Золотые акценты', 'Блюдо с фигурным краем'],
           price: 'Цена по запросу',
         },
         {
-          name: 'Десертная тарелка с приборами',
-          collection: 'Coquelicot',
-          image: 'assets/img/p-coquelicot-dessert.webp',
-          text: 'Десертная тарелка, ложка и вилка с золочёными ручками.',
-          details: ['Десертная тарелка', 'Ложка и вилка с позолотой'],
+          name: 'Чайная пара «Jusan»',
+          collection: 'Jusan',
+          image: 'assets/img/p-jusan-cup.webp',
+          text: 'Чашка с веточкой жусана внутри и золотой ручкой, блюдце с двойной каймой.',
+          details: ['Роспись внутри чашки', 'Золотая ручка'],
           price: 'Цена по запросу',
         },
       ],
@@ -205,12 +238,14 @@ window.SITE = {
       title: 'Вдохновение <em>для вашего стола</em>',
       // size: 'wide' — на две колонки, 'tall' — на две строки, 'big' — 2×2
       images: [
-        { src: 'assets/img/coquelicot-marble.webp', alt: 'Сервиз Coquelicot на мраморе', size: 'wide' },
-        { src: 'assets/img/tulipe-linen.webp', alt: 'Tulipe Impériale с пиалой на льне', size: 'tall' },
-        { src: 'assets/img/tulipe-detail.webp', alt: 'Золотой орнамент пиалы' },
-        { src: 'assets/img/tulipe-marble.webp', alt: 'Тарелки Tulipe Impériale в солнечном свете' },
-        { src: 'assets/img/coquelicot-linen.webp', alt: 'Coquelicot — вид сверху', size: 'tall' },
-        { src: 'assets/img/tulipe-dark.webp', alt: 'Tulipe Impériale на тёмном столе', size: 'big' },
+        { src: 'assets/img/qyzgaldaq-marble.webp', alt: 'Сервиз Qyzgaldaq на мраморе', size: 'wide' },
+        { src: 'assets/img/nauryz-linen.webp', alt: 'Nauryz с пиалой на льне', size: 'tall' },
+        { src: 'assets/img/nauryz-detail.webp', alt: 'Золотой орнамент пиалы Nauryz' },
+        { src: 'assets/img/nauryz-marble.webp', alt: 'Тарелки Nauryz в солнечном свете' },
+        { src: 'assets/img/qyzgaldaq-linen.webp', alt: 'Qyzgaldaq — вид сверху', size: 'tall' },
+        { src: 'assets/img/nauryz-dark.webp', alt: 'Nauryz на тёмном столе', size: 'big' },
+        { src: 'assets/img/jusan-marble.webp', alt: 'Чайный сервиз Jusan — вид сверху', size: 'big' },
+        { src: 'assets/img/jusan-linen.webp', alt: 'Jusan на льняной скатерти', size: 'tall' },
       ],
     },
 
@@ -222,7 +257,7 @@ window.SITE = {
       title: 'Больше, чем <em>посуда</em>',
       items: [
         { icon: 'table', title: 'Подбор сервировки', text: 'Поможем собрать сервиз под ваш стол, интерьер и количество гостей.' },
-        { icon: 'gift', title: 'Подарочная упаковка', text: 'Оформим набор как подарок — на свадьбу, юбилей или новоселье.' },
+        { icon: 'gift', title: 'Фирменная коробка', text: 'Каждый набор упаковываем в специальную коробку, созданную под свой тип сервиза.' },
         { icon: 'truck', title: 'Доставка', text: 'Бережно упакуем и доставим заказ. Условия уточняйте в сообщениях.' },
         { icon: 'chat', title: 'Личная консультация', text: 'Пришлём живые фото и видео любого предмета перед покупкой.' },
       ],
@@ -235,10 +270,10 @@ window.SITE = {
       eyebrow: 'Instagram',
       title: 'Новинки — <em>первыми в Instagram</em>',
       images: [
-        'assets/img/p-tulipe-service.webp',
-        'assets/img/p-coquelicot-dinner.webp',
-        'assets/img/p-tulipe-piala.webp',
-        'assets/img/p-coquelicot-dessert.webp',
+        'assets/img/p-nauryz-service.webp',
+        'assets/img/p-qyzgaldaq-dinner.webp',
+        'assets/img/p-jusan-teapot.webp',
+        'assets/img/p-nauryz-piala.webp',
       ],
     },
 
@@ -249,8 +284,9 @@ window.SITE = {
       eyebrow: 'Контакты',
       title: 'Приходите <em>в шоурум</em>',
       text: 'Покажем коллекции вживую, поможем подобрать сервиз и красиво упакуем подарок. Напишите нам — ответим на любые вопросы.',
-      image: 'assets/img/coquelicot-marble.webp',
-      alt: 'Сервиз Coquelicot на мраморном столе',
+      image: 'assets/img/jusan-marble.webp',
+      alt: 'Чайный сервиз Jusan на мраморном столе',
+      map: true, // карта по адресу из contacts (false — скрыть)
     },
 
     /* ───────────── Пример своего блока (скрыт) ─────────────
@@ -264,6 +300,6 @@ window.SITE = {
   ],
 
   footer: {
-    text: 'Фарфоровая посуда премиум-класса для дома, праздников и подарков.',
+    text: 'Фарфоровая посуда для дома, праздников и подарков. Шоурум в Алматы.',
   },
 };

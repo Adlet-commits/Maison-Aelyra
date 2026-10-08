@@ -95,6 +95,11 @@ if __name__ == '__main__':
         # Wide hero versions: empty table on the left for the headline
         'coq-hero': lambda: flatlay('coq-hero', 's5', 'marble', 22, w=2600, h=1125, x=650, leaves=dict(count=6), light=dict(scale=1.0, softness=70)),
         'tul-hero': lambda: angled('tul-hero', 's2', 'marble', 42, 2600, 1200, 0.95, 1141, 177, leaves=dict(count=6), light=dict(scale=1.0, softness=80)),
+        # Jusan — tea set
+        'jus-linen': lambda: angled('jus-linen', 's6', 'linen', 71, 1125, 1406, 1.0, 0, -285, persp=0.55, leaves=dict(count=4)),
+        'jus-marble': lambda: flatlay('jus-marble', 's7', 'marble', 81, leaves=dict(count=6), light=dict(scale=1.1, softness=60)),
+        # s6h = s6 with the left cup (the piece touching the left edge) removed, so the set can sit on the right
+        'jus-hero': lambda: angled('jus-hero', 's6h', 'marble', 91, 2600, 1200, 1.0, 1475, -348, persp=0.55, leaves=dict(count=6), light=dict(scale=1.0, softness=80)),
     }
     jobs['tul-detail'] = detail
     for k, f in jobs.items():

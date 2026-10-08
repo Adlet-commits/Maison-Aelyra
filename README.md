@@ -37,7 +37,7 @@ contacts: {
 ```js
 {
   name: 'Название товара',
-  collection: 'Tulipe Impériale',   // по этому полю работают фильтры
+  collection: 'Nauryz',             // по этому полю работают фильтры
   image: 'assets/img/my-photo.webp',
   text: 'Короткое описание.',
   details: ['Деталь 1', 'Деталь 2'],
@@ -66,7 +66,7 @@ contacts: {
 | `gallery`     | Галерея (`size`: `wide`, `tall`, `big`) с просмотром |
 | `services`    | Иконки услуг (`icon`: `table`, `gift`, `truck`, `chat`) |
 | `instagram`   | Блок Instagram с плиткой фото                      |
-| `contact`     | Контакты + фото                                    |
+| `contact`     | Контакты + фото, `map: true` — карта по адресу     |
 | `html`        | Любой собственный HTML                             |
 
 В текстах можно использовать `<br>`, `<em>` (золотой курсив в заголовках) и `<strong>`.
