@@ -82,8 +82,12 @@ contacts: {
 В начале `assets/css/style.css` — переменные `--bg`, `--ink`, `--gold` и шрифты.
 
 ## Публикация
-Подойдёт любой статический хостинг: GitHub Pages (Settings → Pages → ветка),
-Netlify, Vercel — просто загрузите папку целиком.
+Сайт опубликован на GitHub Pages: https://adlet-commits.github.io/Maison-Aelyra/
+(Settings → Pages → Deploy from a branch → `gh-pages`, папка `/ (root)`).
+
+Чтобы обновить сайт — отправьте изменения в ветку `gh-pages`.
+При переходе на свой домен (например, maisonaelyra.kz) укажите его в Settings → Pages → Custom domain
+и замените адрес `adlet-commits.github.io/Maison-Aelyra` в `index.html` (canonical, og:url, og:image).
 
 ## Структура
 ```
